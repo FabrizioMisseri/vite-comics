@@ -3,6 +3,8 @@
 export default {
     data() {
         return {
+            selector: 0,
+
             imgName: "dc-logo.png",
 
             arrayNav: [
@@ -23,6 +25,10 @@ export default {
     methods: {
         getImgLogo(imgPath) {
             return new URL(imgPath, import.meta.url).href;
+        },
+
+        moveSelector(index) {
+            this.selector = index;
         }
     }
 }
@@ -40,7 +46,8 @@ export default {
 
             <nav>
                 <ul class="d-flex">
-                    <li v-for="(link, index) in arrayNav">
+                    <li v-for="(link, index) in arrayNav" :class="{ 'active': this.selector == index }"
+                        @click.prevent.stop="moveSelector(index)">
                         <a href=""> {{ link }} </a>
                     </li>
                 </ul>
@@ -63,6 +70,14 @@ nav {
     .d-flex {
         display: flex;
         justify-content: space-between;
+    }
+
+    .active {
+        color: blue;
+    }
+
+    li {
+        cursor: pointer;
     }
 
 }
