@@ -72,13 +72,18 @@ nav {
         justify-content: space-between;
     }
 
-    .active {
-        color: blue;
+    ul {
+        .active {
+            color: blue;
+            border-bottom: 2px solid blue;
+        }
+
+        li {
+            cursor: pointer;
+        }
+
     }
 
-    li {
-        cursor: pointer;
-    }
 
 }
 
