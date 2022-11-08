@@ -39,8 +39,10 @@ export default {
             </div>
 
             <nav>
-                <ul class="d-flex" v-for="(link, index) in arrayNav">
-                    <li><a href=""> {{ link }} </a></li>
+                <ul class="d-flex">
+                    <li v-for="(link, index) in arrayNav">
+                        <a href=""> {{ link }} </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -51,6 +53,10 @@ export default {
 
 
 <style lang="scss" scoped>
+img {
+    max-width: 70px;
+}
+
 nav {
     width: 60%;
 
@@ -58,7 +64,9 @@ nav {
         display: flex;
         justify-content: space-between;
     }
+
 }
+
 
 section {
     padding: 2rem;
