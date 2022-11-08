@@ -1,3 +1,26 @@
-body {
-    background-color: aquamarine;
+// RESET
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+
+// COMMON
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+// UTILITIES
+
+.color-blue {
+    color: blue;
 }

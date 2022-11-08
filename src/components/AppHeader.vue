@@ -1,11 +1,11 @@
 <script></script>
 
 <template>
-    <p>
+    <p class="color-blue">
         ciao
     </p>
 </template>
 
-<style>
-
+<style lang="scss" scoped>
+@use "../styles/general.scss";
 </style>
