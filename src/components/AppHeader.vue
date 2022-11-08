@@ -60,6 +60,8 @@ export default {
 
 
 <style lang="scss" scoped>
+@use "../styles/parziali/variabiles.scss" as *;
+
 img {
     max-width: 70px;
 }
@@ -74,8 +76,8 @@ nav {
 
     ul {
         .active {
-            color: blue;
-            border-bottom: 2px solid blue;
+            color: $primary-color;
+            border-bottom: 2px solid $primary-color;
         }
 
         li {
