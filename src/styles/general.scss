@@ -8,6 +8,16 @@
 
 html {
     font-size: 100%;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
 }
 
 
@@ -20,7 +30,3 @@ html {
 
 
 // UTILITIES
-
-.color-blue {
-    color: blue;
-}

@@ -1,12 +1,11 @@
-<script></script>
+<script>
+
+
+</script>
 
 <template>
-    <p>
-
-        ciao
-    </p>
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 </style>
