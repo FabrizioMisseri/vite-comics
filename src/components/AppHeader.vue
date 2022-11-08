@@ -3,6 +3,8 @@
 export default {
     data() {
         return {
+            imgName: "dc-logo.png",
+
             arrayNav: [
                 "Characters",
                 "Comics",
@@ -16,6 +18,12 @@ export default {
                 "Shop",
             ]
         }
+    },
+
+    methods: {
+        getImgLogo(imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+        }
     }
 }
 
@@ -27,7 +35,7 @@ export default {
         <section>
 
             <div>
-                <img src="" alt="">
+                <img :src="getImgLogo(`../assets/img/${this.imgName}`)" alt="">
             </div>
 
             <nav>
@@ -56,5 +64,6 @@ section {
     padding: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 </style>
