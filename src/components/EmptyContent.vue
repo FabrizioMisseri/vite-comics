@@ -1,5 +1,8 @@
 <script>
 
+export default {
+    EmptyContent: "EmptyContent",
+}
 
 </script>
 

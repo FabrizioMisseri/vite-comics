@@ -1,6 +1,8 @@
 <script>
 
 export default {
+    AppHeader: "AppHeader",
+
     data() {
         return {
             selector: 0,
@@ -38,7 +40,7 @@ export default {
 <template>
 
     <div class="container">
-        <section>
+        <header>
 
             <div>
                 <img :src="getImgLogo(`../assets/img/${this.imgName}`)" alt="">
@@ -53,7 +55,7 @@ export default {
                 </ul>
             </nav>
 
-        </section>
+        </header>
     </div>
 
 </template>
@@ -61,6 +63,16 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/parziali/variabiles.scss" as *;
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+ul {
+    list-style: none;
+}
 
 img {
     max-width: 70px;
@@ -94,7 +106,7 @@ nav {
 }
 
 
-section {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;

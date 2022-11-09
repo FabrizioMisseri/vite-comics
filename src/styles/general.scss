@@ -11,13 +11,8 @@ html {
     font-family: sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
+img {
+    max-width: 100%;
 }
 
 
@@ -26,6 +21,7 @@ ul {
 .container {
     margin: 0 auto;
     width: 80%;
+    max-width: 1200px;
 }
 
 
