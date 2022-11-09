@@ -6,7 +6,7 @@
 <template>
     <section>
         <p>
-            ADRIANO HA DETTO DI NON COPIARE NESSUNO
+            VUOTO
         </p>
     </section>
 </template>

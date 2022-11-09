@@ -46,7 +46,7 @@ export default {
 
             <nav>
                 <ul class="d-flex">
-                    <li v-for="(link, index) in arrayNav" :class="{ 'active': this.selector == index }"
+                    <li v-for="(link, index) in arrayNav" :key="index" :class="{ 'active': this.selector == index }"
                         @click.prevent.stop="moveSelector(index)">
                         <a href=""> {{ link }} </a>
                     </li>
@@ -75,12 +75,16 @@ nav {
     }
 
     ul {
+        height: 100px;
+
         .active {
             color: $primary-color;
-            border-bottom: 2px solid $primary-color;
+            border-bottom: 4px solid $primary-color;
         }
 
         li {
+            line-height: 100px;
+
             cursor: pointer;
         }
 
@@ -91,7 +95,6 @@ nav {
 
 
 section {
-    padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
