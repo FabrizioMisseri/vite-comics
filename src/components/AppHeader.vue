@@ -78,6 +78,10 @@ img {
     max-width: 70px;
 }
 
+header {
+    height: 100px;
+}
+
 nav {
     width: 60%;
 
@@ -87,7 +91,6 @@ nav {
     }
 
     ul {
-        height: 100px;
 
         .active {
             color: $primary-color;
@@ -95,7 +98,7 @@ nav {
         }
 
         li {
-            line-height: 100px;
+            line-height: 96px;
 
             cursor: pointer;
         }
