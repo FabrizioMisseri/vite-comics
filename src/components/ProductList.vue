@@ -92,13 +92,7 @@ export default {
 <template>
     <main>
         <div class="container d-flex">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            <ProductCard v-for="(card, index) in cardsArray" :key="index" :text="card.series" :imgSrc="card.thumb" />
 
         </div>
     </main>
@@ -110,5 +104,11 @@ export default {
 main {
     padding: 2rem 0;
     background-color: $color-steel;
+}
+
+.container {
+    width: calc(80% + 2rem);
+
+
 }
 </style>

@@ -1,6 +1,13 @@
 <script>
+import { stringifyStyle } from '@vue/shared';
+
 export default {
     ProductCard: "ProductCard",
+
+    props: {
+        text: String,
+        imgSrc: String,
+    },
 
     data() {
         return {
@@ -13,7 +20,21 @@ export default {
 <template>
 
     <div class="card">
-        <div class="content"></div>
+        <div class="content">
+
+            <!-- img -->
+            <div class="img-box">
+                <img :src="imgSrc" alt="">
+            </div>
+            <!-- / img -->
+
+            <!-- text -->
+            <h5>
+                {{ text }}
+            </h5>
+            <!-- / text -->
+
+        </div>
     </div>
 
 </template>
@@ -24,12 +45,16 @@ export default {
 .card {
     width: calc(100% / 6);
     padding: 1rem;
-    // debug
+    margin-bottom: 2rem;
 
     .content {
-        //debug
-        background-color: $color-white;
-        height: 100px;
+        h5 {
+            text-align: center;
+            color: $color-white;
+            margin-top: .6rem;
+        }
+
+
     }
 }
 </style>
