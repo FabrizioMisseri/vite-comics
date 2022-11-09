@@ -1,6 +1,6 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import EmptyContent from "./components/EmptyContent.vue";
+import ProductList from "./components/ProductList.vue";
 
 export default {
   data() {
@@ -11,7 +11,7 @@ export default {
 
   components: {
     AppHeader,
-    EmptyContent,
+    ProductList,
   }
 }
 
@@ -19,7 +19,7 @@ export default {
 
 <template>
   <AppHeader />
-  <EmptyContent />
+  <ProductList />
 </template>
 
 <style lang="scss">
