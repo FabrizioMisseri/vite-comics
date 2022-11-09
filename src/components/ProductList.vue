@@ -93,7 +93,12 @@ export default {
     <main>
         <div class="container d-flex">
             <ProductCard v-for="(card, index) in cardsArray" :key="index" :text="card.series" :imgSrc="card.thumb" />
+        </div>
 
+        <div class="btn-box">
+            <a class="btn">
+                LOAD MORE
+            </a>
         </div>
     </main>
 </template>
@@ -104,11 +109,26 @@ export default {
 main {
     padding: 2rem 0;
     background-color: $color-steel;
-}
 
-.container {
-    width: calc(80% + 2rem);
+    .container {
+        width: calc(80% + 2rem);
+    }
 
+    .btn-box {
+        text-align: center;
 
+        .btn {
+            display: inline-block;
+            color: $color-white;
+            background-color: $secondary-color;
+            padding: .6rem 1.2rem;
+            cursor: pointer;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
 }
 </style>
